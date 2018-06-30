@@ -1,4 +1,4 @@
-import datetime
+from datetime import datetime
 class Transaction:
     def __init__(this):
         return
@@ -6,7 +6,7 @@ class Transaction:
         this.id=id
         this.label=label
         this.montant=montant
-        this.date=datetime.datetime.now()
+        this.date=datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         this.fomTo=fromTo
         this.goTo=goTo
 

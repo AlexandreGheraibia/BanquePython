@@ -3,7 +3,7 @@
 #   des transactions
 #   appartient a une banque et un client
 import sys
-import datetime
+from datetime import datetime
 
 from Transaction import Transaction
 
@@ -19,6 +19,9 @@ class Account:
 
     def getId(this):
         return this.id
+
+    def getDate(this):
+        return this.createThe
 
     """def getName(this):
         return this.name
@@ -51,7 +54,7 @@ class Account:
         this.custumer=None
         this.bank=None
         this.transactions=[]
-        this.createThe=datetime.datetime
+        this.createThe=datetime.now().strftime('%Y-%m-%d %H:%M:%S')
     def __repr__(this):
         return f"{name}"
 
