@@ -58,7 +58,7 @@ class Account:
     def __repr__(this):
         return f"{name}"
 
-    def retire(this,montant,label):
+    def drawBack(this,montant,label):
         if this.getSold()-montant>0 and montant>0:
             this.sold-=montant
             id=transCount=+1
